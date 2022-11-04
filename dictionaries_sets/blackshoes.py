@@ -4,8 +4,8 @@ while (True):
     purchaseSize = int(input("Which shoe size would you like to buy?\n"))
     if purchaseSize < 0:
         break
-    if blackShoes.purchaseSize > 0:
-        blackShoes.purchaseSize -= 1
+    if blackShoes[purchaseSize] > 0:
+        blackShoes[purchaseSize] -= 1
     else:
         print("Shoes are no longer in stock")
         
